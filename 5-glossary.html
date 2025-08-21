@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajasthan Glossary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #fdf6e4;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #7b2d26;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card p {
+      text-align: center;
+      padding: 10px;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .scroll-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #7b2d26;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .scroll-btn:hover {
+      background: #f4a261;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Glossary of Rajasthan
+  </header>
+
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#top" onclick="scrollToTop()">Back to Top</a>
+  </nav>
+
+  <div class="gallery" id="gallery">
+    <div class="card">
+      <img src="hawa-mahal-jaipur-rajasthan-city-1-hero.jpg" alt="Hawa Mahal">
+      <p>Hawa Mahal, Jaipur</p>
+    </div>
+
+    <div class="card">
+      <img src="udaipurimg.jpg" alt="Udaipur City Palace">
+      <p>City Palace, Udaipur</p>
+    </div>
+
+    <div class="card">
+      <img src="jaisalmer.jpg" alt="Jaisalmer Fort">
+      <p>Jaisalmer Fort, Golden City</p>
+    </div>
+
+    <div class="card">
+      <img src="download.jpg" alt="Mehrangarh Fort">
+      <p>Mehrangarh Fort, Jodhpur</p>
+    </div>
+
+    <div class="card">
+      <img src="nakilake.jpg" alt="Nakki Lake">
+      <p>Nakki Lake, Mount Abu</p>
+    </div>
+
+    <div class="card">
+      <img src="daal bati.jpg" alt="Dal Baati Churma">
+      <p>Dal Baati Churma – Traditional Food</p>
+    </div>
+
+    <div class="card">
+      <img src="dress.jpg" alt="Rajasthani Dress">
+      <p>Traditional Dress of Rajasthan</p>
+    </div>
+
+    <div class="card">
+      <img src="camel-festival-bikaner1.jpg" alt="Camel Festival">
+      <p>Bikaner Camel Festival</p>
+    </div>
+
+    <div class="card">
+      <img src="dance.jpg" alt="Kalbelia Dance">
+      <p>Kalbelia Folk Dance</p>
+    </div>
+
+    <div class="card">
+      <img src="handicraft.jpg" alt="Handicrafts Rajasthan">
+      <p>Rajasthani Handicrafts</p>
+    </div>
+  </div>
+
+  <button class="scroll-btn" onclick="scrollToTop()">Back to Top</button>
+
+  
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>

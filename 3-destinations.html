@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Destinations of Rajasthan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #f8f3e7;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #8b2f1c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #8b2f1c;
+      margin-bottom: 15px;
+    }
+
+    .place {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .place img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .place p {
+      flex: 1;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .scroll-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #8b2f1c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .scroll-btn:hover {
+      background: #f4a261;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Tourist Destinations of Rajasthan
+  </header>
+
+  <nav>
+    <a href="#jaipur">Jaipur</a>
+    <a href="#udaipur">Udaipur</a>
+    <a href="#jaisalmer">Jaisalmer</a>
+    <a href="#jodhpur">Jodhpur</a>
+    <a href="#mountabu">Mount Abu</a>
+  </nav>
+
+  <section id="jaipur">
+    <h2>Jaipur – The Pink City</h2>
+    <div class="place">
+      <img src="hawamaheljaipur.jpg" alt="Hawa Mahal Jaipur">
+      <p>
+        Jaipur, the capital of Rajasthan, is famous for its royal heritage and vibrant culture. 
+        The city is home to magnificent palaces like the City Palace and Hawa Mahal, and grand forts like Amer Fort. 
+        Its pink-colored old city gives it the title of “Pink City.”
+      </p>
+    </div>
+  </section>
+
+  <section id="udaipur">
+    <h2>Udaipur – City of Lakes</h2>
+    <div class="place">
+      <img src="udaipurimg.jpg" alt="Udaipur City Palace">
+      <p>
+        Known as the “Venice of the East,” Udaipur is surrounded by scenic lakes and the Aravalli Hills. 
+        The City Palace overlooking Lake Pichola is one of the top attractions. 
+        Boat rides, traditional bazaars, and romantic sunsets make Udaipur unforgettable.
+      </p>
+    </div>
+  </section>
+
+  <section id="jaisalmer">
+    <h2>Jaisalmer – The Golden City</h2>
+    <div class="place">
+      <img src="jaisalmer.jpg" alt="Jaisalmer Fort">
+      <p>
+        Jaisalmer, located in the Thar Desert, is famous for its golden sandstone architecture. 
+        The Jaisalmer Fort, also called “Sonar Quila,” looks like it has risen straight from the desert sands. 
+        Desert safaris and camel rides are popular experiences here.
+      </p>
+    </div>
+  </section>
+
+  <section id="jodhpur">
+    <h2>Jodhpur – The Blue City</h2>
+    <div class="place">
+      <img src="images (1).jpg" alt="Mehrangarh Fort Jodhpur">
+      <p>
+        Jodhpur is known as the “Blue City” because of its striking blue-painted houses near the Mehrangarh Fort. 
+        The fort itself is one of the largest in India and offers breathtaking views of the city. 
+        Jodhpur is also known for its handicrafts and traditional Rajasthani food.
+      </p>
+    </div>
+  </section>
+
+  <section id="mountabu">
+    <h2>Mount Abu – Hill Station of Rajasthan</h2>
+    <div class="place">
+      <img src="download.jpg" alt="Mount Abu Nakki Lake">
+      <p>
+        Mount Abu, the only hill station of Rajasthan, is a refreshing retreat in the Aravalli Hills. 
+        It is famous for Nakki Lake, Guru Shikhar (highest peak in Aravallis), and the beautifully carved Dilwara Jain Temples. 
+        The cool climate makes it a favorite summer destination.
+      </p>
+    </div>
+    <button class="scroll-btn" onclick="scrollToTop()">Back to Top</button>
+  </section>
+
+
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>

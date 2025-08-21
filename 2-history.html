@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History of Rajasthan</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/71/Amber_Fort%2C_Jaipur%2C_Rajasthan.jpg') no-repeat center center/cover;
+    }
+
+    /* Overlay for readability */
+    .overlay {
+      background: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      background: #b5651d;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: justify;
+    }
+
+    h2 {
+      text-align: center;
+      color: #b5651d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+
+    /* Button */
+    .scroll-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #b5651d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .scroll-btn:hover {
+      background: #f4a261;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      History of Rajasthan
+    </header>
+
+    <nav>
+      <a href="#ancient">Ancient Times</a>
+      <a href="#medieval">Medieval Era</a>
+      <a href="#modern">Modern Rajasthan</a>
+    </nav>
+
+    <section id="ancient">
+      <h2>Ancient Times</h2>
+      <p>
+        Rajasthan, known as the “Land of Kings,” has a history dating back thousands of years. 
+        Ancient settlements from the Indus Valley Civilization were found in Kalibangan, showing the region’s early importance. 
+        Rajasthan has also been influenced by Vedic culture and was home to many Rajput clans who played a major role in shaping its legacy.
+      </p>
+    </section>
+
+    <section id="medieval">
+      <h2>Medieval Era</h2>
+      <p>
+        During the medieval period, Rajasthan became famous for its forts, palaces, and warrior culture. 
+        The Rajputs defended their kingdoms with great valor against invasions, especially from the Delhi Sultanate and the Mughals. 
+        Legendary tales of bravery, like those of Maharana Pratap of Mewar, remain an inspiration for generations.
+      </p>
+    </section>
+
+    <section id="modern">
+      <h2>Modern Rajasthan</h2>
+      <p>
+        In the 18th and 19th centuries, Rajasthan came under British influence but maintained its princely states. 
+        After India’s independence in 1947, these states were united to form the present-day state of Rajasthan. 
+        Today, Rajasthan is renowned for its cultural heritage, majestic forts, vibrant festivals, and traditions that carry forward its glorious past.
+      </p>
+      <button class="scroll-btn" onclick="scrollToTop()">Back to Top</button>
+    </section>
+
+   
+  </div>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>

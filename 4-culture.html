@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture of Rajasthan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #faf3e0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #a9441d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #a9441d;
+      margin-bottom: 15px;
+    }
+
+    .culture {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .culture img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .culture p {
+      flex: 1;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .scroll-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #a9441d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .scroll-btn:hover {
+      background: #f4a261;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Culture of Rajasthan
+  </header>
+
+  <nav>
+    <a href="#food">Food</a>
+    <a href="#dress">Traditional Dress</a>
+    <a href="#festivals">Festivals</a>
+    <a href="#dance">Music & Dance</a>
+    <a href="#handicrafts">Handicrafts</a>
+  </nav>
+
+  <section id="food">
+    <h2>Traditional Food</h2>
+    <div class="culture">
+      <img src="daal bati.jpg" alt="Dal Baati Churma">
+      <p>
+        Rajasthani food is known for its rich flavors and use of spices.  
+        The most famous dish is **Dal Baati Churma**, along with **Gatte ki Sabzi, Ker Sangri**, and **Laal Maas**.  
+        Sweets like **Ghevar** and **Mawa Kachori** are also widely loved.
+      </p>
+    </div>
+  </section>
+
+  <section id="dress">
+    <h2>Traditional Dress</h2>
+    <div class="culture">
+      <img src="dress.jpg" alt="Rajasthani Traditional Dress">
+      <p>
+        Rajasthan’s traditional dress is colorful and vibrant.  
+        Men wear **Pagri (turbans)**, **Angarkha**, and **Dhoti**, while women wear **Ghagra-Choli** with a beautifully embroidered **Odhni (veil)**.  
+        The bright colors reflect the lively spirit of the desert.
+      </p>
+    </div>
+  </section>
+
+  <section id="festivals">
+    <h2>Festivals</h2>
+    <div class="culture">
+      <img src="camel-festival-bikaner1 (1).jpg" alt="Camel Festival Rajasthan">
+      <p>
+        Rajasthan celebrates many colorful festivals such as the **Pushkar Camel Fair**, **Teej**, **Gangaur**, and **Desert Festival** of Jaisalmer.  
+        These festivals include music, dance, puppet shows, camel races, and traditional fairs.
+      </p>
+    </div>
+  </section>
+
+  <section id="dance">
+    <h2>Music & Dance</h2>
+    <div class="culture">
+      <img src="dance.jpg" alt="Kalbelia Dance">
+      <p>
+        Folk music and dance are at the heart of Rajasthani culture.  
+        The **Kalbelia dance**, performed by snake charmers, and **Ghoomar dance**, known for its graceful twirls, are world famous.  
+        Traditional instruments like the **Sarangi** and **Dholak** add charm to the performances.
+      </p>
+    </div>
+  </section>
+
+  <section id="handicrafts">
+    <h2>Handicrafts</h2>
+    <div class="culture">
+      <img src="handicraft.jpg" alt="Rajasthan Handicrafts">
+      <p>
+        Rajasthan is famous for its **handicrafts, block printing, blue pottery, and jewelry**.  
+        The markets of Jaipur, Jodhpur, and Udaipur are filled with handmade items like puppets, carpets, and textiles.  
+        These crafts reflect the artistic traditions of Rajasthan.
+      </p>
+    </div>
+    <button class="scroll-btn" onclick="scrollToTop()">Back to Top</button>
+  </section>
+
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>
